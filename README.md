@@ -41,9 +41,9 @@ Dưới đây là danh sách các thành phần đã làm:
 ## Hướng Dẫn Cài Đặt
 
 - Clone repository :
-Mở cmd trong thư mục cần lưu và chạy lệnh : `git clone https://github.com/nhatlinhdev201/ltdd_lab03.git`
+Mở cmd trong thư mục cần lưu và chạy lệnh : `git clone https://github.com/nhatlinhdev201/reactnative-lab05.git`
 
-Di chuyển vào ứng dụng, chạy lệnh `cd ltdd_lab03`
+Di chuyển vào ứng dụng, chạy lệnh `cd reactnative-lab05`
 
 - Tải các modules ứng dụng :
 Tại cmd chạy lệnh `npm install`
