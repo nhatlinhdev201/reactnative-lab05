@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Rating from '@mui/material/Rating';
 import HelpIcon from '@mui/icons-material/Help';
 
-const Screen01 = () => {
-
-    const [srcImageProductMain, setSrcImageProductMain] = useState('../image/vs_black.png')
+const Screen01 = ({route, navigation }) => {
 
     return (
         <View style={styles.container}>
@@ -93,21 +92,29 @@ const Screen01 = () => {
             </View>
             <TouchableOpacity
                 style={{
-                    alignItems: 'center',
                     borderWidth: 1,
                     borderColor: 'gray',
                     borderRadius: 8,
-                    padding: 10,
+                    padding: 5,
                     marginTop: 20
+                }}
+                onPress={() =>{
+                    navigation.navigate('Screen2')
                 }}
             >
                 <Text style={{
                     fontSize: 15,
                     color: 'black',
                     fontWeight: 600,
-
+                    textAlign : 'center',
                 }}>
-                    4 MẪU CHỌN MÀU       >
+                    4 MẪU CHỌN MÀU  
+                    <ArrowForwardIosIcon
+                        style={{
+                            fontSize : 14,
+                            marginLeft : 20
+                        }}
+                    />
                 </Text>
             </TouchableOpacity>
             <TouchableOpacity
